@@ -3,7 +3,7 @@
 
     Вывести в консоль с помощью цикла FOR все четные числа от 10 до 50
 */
-for (let i = 0; i < 50; i = i + 2){
+for (let i = 0; i <= 50; i += 2){
     console.log(i);
 }
 
@@ -101,7 +101,7 @@ printName('Natalia', 'Kovtun');
     
 */
 let n = 21;
-while (n < 67) {
+while (n <= 67) {
     console.log(n);
-    n = n + 2;
+    n += 2;
 }
