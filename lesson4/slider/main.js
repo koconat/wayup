@@ -1,7 +1,8 @@
 const prev = document.getElementById('btn-prev'),
     next = document.getElementById('btn-next'),
     slides = document.querySelectorAll('.slide'),
-    dots = document.querySelectorAll('.dot');
+    dots = document.querySelectorAll('.dot'),
+    slideBox = document.getElementById('slide-box');
 
 let index = 0;
 
@@ -55,5 +56,14 @@ dots.forEach((item, indexDot) => {
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
-//зміна слайду кожні 2 секунди
-setInterval(nextSlide, 2000);
+let startChangeSlide = setInterval(nextSlide, 2000);
+
+slideBox.addEventListener('mouseenter',
+    function () {
+        clearInterval(startChangeSlide)
+    }, false);
+
+slideBox.addEventListener('mouseleave',
+    function () {
+        startChangeSlide = setInterval(nextSlide, 2000)
+    }, false);
