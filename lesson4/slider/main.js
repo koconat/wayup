@@ -56,8 +56,10 @@ dots.forEach((item, indexDot) => {
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
+//Автоматична зміна слайдів
 let startChangeSlide = setInterval(nextSlide, 2000);
 
+//При наведенні курсора показ слайдів призупиняється
 slideBox.addEventListener('mouseenter',
     function () {
         clearInterval(startChangeSlide)
