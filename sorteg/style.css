@@ -1,0 +1,68 @@
+section, header {
+    border-style: none;
+}
+/***************Navigator method*******************/
+.navbar {
+    color: #fff;
+    background-color: rgba(55, 79, 100, 1);
+}
+.navbar a{
+    color: #fff;
+}
+/***************\Navigator method*******************/
+
+/***************Data field*******************/
+h5 {
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+h5:hover {
+    cursor: pointer;
+}
+.enterData, .result {
+    display: inline-block;
+    border-style: groove;
+    border-radius: 25px;
+    margin: 25px 12px;
+    height: 300px;
+}
+.enterData input, .result input {
+    width: 100%;
+    height: 70%;
+}
+.data input {
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+#btnSort {
+    margin-bottom: 25px;
+}
+/***************\Data field*******************/
+
+/***************Fotter*******************/
+img {
+    width: 100%;
+}
+
+footer {
+    background-color: #45637d;
+}
+/***************\Fotter*******************/
+
+
+@media only screen and (max-width: 1024px) {
+    .navbar-brand {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .data input {
+        width: 100%;
+    }
+    .video {
+        display: none;
+    }
+}
